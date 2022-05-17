@@ -111,6 +111,17 @@ body {
 
 .sale {
   background: #8233FF;
+  position:absolute;
+  transform: translate(0px, -65px);
+  width: 275px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 .buy-body {
@@ -301,4 +312,91 @@ body {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+
+.cybersecurity{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 60vh;
+  position:relative;
+}
+
+.cybersecurity-left-block{
+  margin: 0;
+  background: linear-gradient(233.74deg, #FFFFFF 28.85%, rgba(255, 255, 255, 0) 100%), linear-gradient(18.35deg, rgba(153, 132, 245, 0.2) 0%, rgba(153, 132, 245, 0) 87.55%);
+  width: 100%;
+}
+
+.cybersecurity-slogan-block{
+  padding-left: 40%;
+}
+
+.cybersecurity-header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.cybersecurity-slogan{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #444444;
+}
+
+.cybersecurity-preslogan {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.cybersecurity-slogan-list{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #444444;
+  list-style-image: url("../image/marker.svg");
+}
+
+.cybersecurity-centre-block {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(144.23deg, rgba(126, 255, 51, 0.4) 0%, rgba(35, 209, 174, 0.4) 79.06%), #23D1AE;
+  text-align: center;
+}
+
+/* .cybersecurity-centre-block:after {
+  content: " ";
+  position: absolute;
+  top: -40px;
+  left: 40%;
+  right: 0;
+  bottom: 0;
+  width: 15em;
+  min-height: 130vh;
+  transform: rotate(10deg);
+  background: green;
+  z-index: 1;
+} */
+
+.cybersecurity-centre-block img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 111;
+   z-index: 1;
+}
+
+.cybersecurity-rigth-block{
+  width: 100%;
+  background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
 }
