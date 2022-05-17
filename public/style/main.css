@@ -23,8 +23,7 @@ body {
 }
 
 .header {
-  background: #1d1d1b;
-  opacity: 0.4;
+  background: #1d1d1b45;
 }
 
 .logo {
@@ -77,13 +76,14 @@ body {
 }
 
 .buy-block{
+  margin-top: 3vh;
   margin-left: 12vh;
   margin-right: 12vh;
 }
 
 .buy-header{
   display: flex;
-  padding-left: 135px;
+  padding-left: 10px;
 }
 
 .download{
@@ -293,7 +293,7 @@ body {
   text-indent: 0.01px;
   border: 2px solid black;
   text-overflow: '';
-  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  -webkit-appearance: button;
 }
 
 .right-block {
@@ -319,14 +319,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height: 60vh;
+  min-height: 60vh;
+  max-height: 70vh;
   position:relative;
+  margin-top: 10vh;
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
 
 .cybersecurity-left-block{
   margin: 0;
-  background: linear-gradient(233.74deg, #FFFFFF 28.85%, rgba(255, 255, 255, 0) 100%), linear-gradient(18.35deg, rgba(153, 132, 245, 0.2) 0%, rgba(153, 132, 245, 0) 87.55%);
   width: 100%;
+  transform: translate(0px, 65px);
 }
 
 .cybersecurity-slogan-block{
@@ -368,35 +371,74 @@ body {
 .cybersecurity-centre-block {
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(144.23deg, rgba(126, 255, 51, 0.4) 0%, rgba(35, 209, 174, 0.4) 79.06%), #23D1AE;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-/* .cybersecurity-centre-block:after {
-  content: " ";
-  position: absolute;
-  top: -40px;
-  left: 40%;
-  right: 0;
-  bottom: 0;
-  width: 15em;
-  min-height: 130vh;
-  transform: rotate(10deg);
-  background: green;
-  z-index: 1;
-} */
-
 .cybersecurity-centre-block img {
-  height: 100%;
+  height: 90%;
   width: auto;
   max-width: 100%;
-  position: relative;
   box-sizing: border-box;
-  z-index: 111;
-   z-index: 1;
+
 }
 
 .cybersecurity-rigth-block{
   width: 100%;
-  background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+}
+
+.rigth-block-slogan{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #444444;
+}
+
+.rigth-block-preslogan {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.rigth-block-test{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.rigth-block-test p {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #23D1AE;
+}
+
+.group-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group-logo a {
+  padding-bottom: 1vh;
+}
+
+.one-logo {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.one-logo span {
+  margin: 5px;
+} 
+
+.connector {
+  padding-left: 2vh;
+  width: 11px;
 }
