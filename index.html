@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./public/style/main.css" />
+  <script defer src="./public/js/rating.js"></script>
+  <script defer src="./public/js/dropdown.js"></script>
   <title>Kaspersky</title>
 </head>
+
 <body>
-  
+  <!-- <header class="header">
+      <img src="./public/image/kaspersky-logo.svg" alt="logo" class="logo" />
+    </header> -->
+  <div class="main-container">
+    <div class="main-block">
+      <div class="text-container">
+        <div class="main-slogan">
+          <p>Don’t let malware</p>
+          <p>defeat you</p>
+        </div>
+        <div class="pre-slogan">
+          <p>Protect your devices with</p>
+          <p>a security suite made for gamers</p>
+        </div>
+        <ul class="slogan-list">
+          <li>
+            <p>Gaming mode: <span>Ensures optimal PC performance while you play</span></p>
+          </li>
+          <li>
+            <p>100% detection rate: <span>Never misses a threat</span></p>
+          </li>
+          <li>
+            <p>Cutting-edge cybersecurity: <span>Runs on AI overseen by world-leading threat analysts</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="buy-block">
+      <div class="buy-header">
+        <div class="download">
+          <span>Compatible with:</span>
+          <a href="#"><img src="./public/image/windows-logo.svg" alt="windows-logo"></a>
+          <div class="separator"></div>
+          <a href="#"><img src="./public/image/mac-logo.svg" alt="mac-logo"></a>
+          <div class="separator"></div>
+          <a href="#"><img src="./public/image/android-logo.svg" alt="android-logo"></a>
+          <div class="separator"></div>
+          <a href="#"><img src="./public/image/ios-logo.svg" alt="ios-logo"></a>
+        </div>
+        <div class="sale">Save 20%</div>
+      </div>
+      <div class="buy-body">
+        <div class="left-block">
+          <div class="product">
+            <img src="./public/image/product-icon.svg" alt="product-icon">
+            <div class="grouper-for-flex">
+              <p class="product-name">Kaspersky Internet Security</p>
+              <div class="rating rating-set">
+                <div class="rating-body">
+                  <div class="rating-active"></div>
+                  <div class="rating-items">
+                    <input type="radio" class="rating-item" value="1" name="rating">
+                    <input type="radio" class="rating-item" value="2" name="rating">
+                    <input type="radio" class="rating-item" value="3" name="rating">
+                    <input type="radio" class="rating-item" value="4" name="rating">
+                    <input type="radio" class="rating-item" value="5" name="rating">
+                  </div>
+                </div>
+                <p class="reviews">(1503 reviews)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="centre-block">
+          <div class="left-separator"></div>
+          <div class="price">
+            <p class="old-price">£34.99</p>
+            <p class="new-price">£35.99</p>
+          </div>
+          <div class="right-separator"></div>
+        </div>
+        <div class="right-block">
+          <span class="dropdown">
+            <select>    
+                <option>Sherlock Holmes</option>
+                <option>The Great Gatsby</option>  
+                <option>V for Vendetta</option>
+                <option>The Wolf of Wallstreet</option>
+                <option>Quantum of Solace</option>
+            </select>
+        </span>
+        <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
