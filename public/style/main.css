@@ -23,8 +23,7 @@ body {
 }
 
 .header {
-  background: #1d1d1b;
-  opacity: 0.4;
+  background: #1d1d1b45;
 }
 
 .logo {
@@ -77,13 +76,14 @@ body {
 }
 
 .buy-block{
+  margin-top: 3vh;
   margin-left: 12vh;
   margin-right: 12vh;
 }
 
 .buy-header{
   display: flex;
-  padding-left: 135px;
+  padding-left: 10px;
 }
 
 .download{
@@ -111,6 +111,17 @@ body {
 
 .sale {
   background: #8233FF;
+  position:absolute;
+  transform: translate(0px, -65px);
+  width: 275px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 .buy-body {
@@ -282,7 +293,7 @@ body {
   text-indent: 0.01px;
   border: 2px solid black;
   text-overflow: '';
-  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  -webkit-appearance: button;
 }
 
 .right-block {
@@ -301,4 +312,133 @@ body {
   align-items: center;
   text-align: center;
   color: #FFFFFF;
+}
+
+.cybersecurity{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 60vh;
+  max-height: 70vh;
+  position:relative;
+  margin-top: 10vh;
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
+
+.cybersecurity-left-block{
+  margin: 0;
+  width: 100%;
+  transform: translate(0px, 65px);
+}
+
+.cybersecurity-slogan-block{
+  padding-left: 40%;
+}
+
+.cybersecurity-header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.cybersecurity-slogan{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #444444;
+}
+
+.cybersecurity-preslogan {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.cybersecurity-slogan-list{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #444444;
+  list-style-image: url("../image/marker.svg");
+}
+
+.cybersecurity-centre-block {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cybersecurity-centre-block img {
+  height: 90%;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+
+}
+
+.cybersecurity-rigth-block{
+  width: 100%;
+}
+
+.rigth-block-slogan{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #444444;
+}
+
+.rigth-block-preslogan {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.rigth-block-test{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.rigth-block-test p {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #23D1AE;
+}
+
+.group-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group-logo a {
+  padding-bottom: 1vh;
+}
+
+.one-logo {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.one-logo span {
+  margin: 5px;
+} 
+
+.connector {
+  padding-left: 2vh;
+  width: 11px;
 }
