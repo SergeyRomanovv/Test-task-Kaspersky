@@ -24,6 +24,28 @@ body {
 
 .header {
   background: #1d1d1b45;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.money-dropdown{
+  margin-right: 10vh;
+}
+
+.money-dropdown select {
+  background: #F2F2F2;
+  color: #1D1D1B;;
+  font-size: inherit;
+  margin: .1em;
+  padding: .2em;
+  padding-right: 0.5em;	
+  border: 0;
+  text-indent: 0.01px;
+  border: 2px solid black;
+  text-overflow: '';
+  -webkit-appearance: button;
 }
 
 .logo {
