@@ -482,5 +482,9 @@
     padding-left: 2vh;
     width: 11px;
   }
+
+  .sticky-buy-none{
+    display: none;
+  }
 }
 
