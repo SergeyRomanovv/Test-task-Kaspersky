@@ -169,6 +169,10 @@
   .product {
     display: flex;
   }
+
+  .product img {
+    padding: 1vh ;
+  }
   
   .product-name {
     font-style: normal;
