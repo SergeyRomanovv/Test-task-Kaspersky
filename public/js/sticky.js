@@ -20,14 +20,13 @@ const stickyBuy = document.querySelector('.sticky-buy-none');
 const btnCoord = buyBody.getBoundingClientRect();
 
 const screenWidth = window.screen.width;
-console.log(screenWidth);
 
 if (screenWidth < 768) {
-  window.onscroll = () => {
+  window.addEventListener('scroll', () => {
     const currentScrollPos = window.pageYOffset;
     // eslint-disable-next-line no-unused-expressions
     currentScrollPos > btnCoord.bottom ? stickyBuy.className = 'sticky-buy-body' : stickyBuy.className = 'sticky-buy-none';
-  };
+  });
 
   const productBtn = document.querySelector('.product-btn');
 
