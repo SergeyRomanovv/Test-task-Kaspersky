@@ -19,15 +19,20 @@ const buyBody = document.querySelector('.buy-body');
 const stickyBuy = document.querySelector('.sticky-buy-none');
 const btnCoord = buyBody.getBoundingClientRect();
 
-window.onscroll = () => {
-  const currentScrollPos = window.pageYOffset;
-  // eslint-disable-next-line no-unused-expressions
-  currentScrollPos > btnCoord.bottom ? stickyBuy.className = 'sticky-buy-body' : stickyBuy.className = 'sticky-buy-none';
-};
+const screenWidth = window.screen.width;
+console.log(screenWidth);
 
-const productBtn = document.querySelector('.product-btn');
+if (screenWidth < 768) {
+  window.onscroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    // eslint-disable-next-line no-unused-expressions
+    currentScrollPos > btnCoord.bottom ? stickyBuy.className = 'sticky-buy-body' : stickyBuy.className = 'sticky-buy-none';
+  };
 
-productBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-  window.scrollTo(btnCoord.x, btnCoord.y);
-});
+  const productBtn = document.querySelector('.product-btn');
+
+  productBtn?.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo(btnCoord.x, btnCoord.y);
+  });
+}
